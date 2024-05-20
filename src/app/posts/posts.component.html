@@ -1,0 +1,20 @@
+
+<!-- src/app/app.component.html -->
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4">Posts</h1>
+      </div>
+      @for (post of post; track $index) {
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body }}</p>
+          </div>
+        </div>
+      </div>
+    }
+    </div>
+  </div>
+  

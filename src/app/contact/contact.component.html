@@ -1,0 +1,15 @@
+<div class="formu">
+    <h1 class="titulo">Formulario</h1>
+ <form [formGroup]="form" >
+     <label class="label">Nombre</label><br>
+     <input type="text" id="name" formControlName="name" class="input">
+     <br><br>
+     <label for=""class="label">Correo</label><br>
+     <input type="mail" id="email" formControlName="email" class="input">
+     <br><br>
+     <label for=""class="label">Mensaje</label><br>
+     <input type="text" id="message" formControlName="message" class="input">
+     <br><br>
+    <button class="boton" type="submit" (click)="validarForm2()">Validar</button>
+ </form>
+ </div>
